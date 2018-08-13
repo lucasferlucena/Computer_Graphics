@@ -41,18 +41,17 @@ void DrawLine(int x0, int y0, int x1, int y1, std::vector<int> color0, std::vect
 	int dx = (x1 - x0);
 	int dy = (y1 - y0);
 
-	if(dx * dy < 0){
-		if(x0 > x1){
+	if(dx * dy < 0) {
+		if(x0 > x1) {
 			std::swap(x0, x1);
-		}
-		if(y0 < y1){
 			std::swap(y0, y1);
+			u = 1;
 		}
 
 		dx = std::abs(dx);
 		dy = std::abs(dy);
 		 
- 		if(dy  > dx){
+ 		if(dy  > dx) {
 			std::swap(x0,y0);
 			std::swap(x1,y1);
 			std::swap(dx,dy);
@@ -66,46 +65,27 @@ void DrawLine(int x0, int y0, int x1, int y1, std::vector<int> color0, std::vect
 		int incr_e = 2 * dy;
 		int incr_ne = 2 * (dy - dx);
 
-		if(!k){	
-			color = interpolate(color0, color1, line_size, LineSize(x0, y0, x, y));
+		color = u|| u && k ? interpolate(color1, color0, line_size, LineSize(x0, y0, x, y)) : interpolate(color0, color1, line_size, LineSize(x0, y0, x, y));
+		k ? PutPixel(y, x, color) : PutPixel(x, y, color);
 
-			PutPixel(x, y, color);	
-			while (x < x1) {
-				if (d <= 0) {
-					d += incr_e;
-					x++;
-				} else {
-					d += incr_ne;
-					x++;
-					y--;
-				}
-				color = interpolate(color0, color1, line_size, LineSize(x0, y0, x, y));
-				PutPixel(x, y, color);	
+		while (!k&&(x < x1) || k&&( x1 < x)) {
+			if (d <= 0) {
+				d += incr_e;
+				k ? x-- : x++;
+			} else {
+				d += incr_ne;
+				k ? x-- : x++;
+				k ? y++ : y--;
 			}
-		}
-		else{
-		color = interpolate(color0, color1, line_size, LineSize(x0, y0, x, y));
-		PutPixel(x, y, color);	
-
-			while (x1 < x) {
-				if (d <= 0) {
-					d += incr_e;
-					x--;
-				} else {
-					d += incr_ne;
-					x--;
-					y++;
-				}
-				color = interpolate(color0, color1, line_size, LineSize(x0, y0, x, y));
-				PutPixel(y, x, color);	
-			}
+			color = u|| u && k ? interpolate(color1, color0, line_size, LineSize(x0, y0, x, y)) : interpolate(color0, color1, line_size, LineSize(x0, y0, x, y));
+			k ? PutPixel(y, x, color) : PutPixel(x, y, color);	
 		}
 	}
-	else{
+	else {
 		dx = std::abs(dx);
 		dy = std::abs(dy);
 		
-		if(dy  > dx){
+		if(dy  > dx) {
 			std::swap(x0,y0);
 			std::swap(x1,y1);
 			std::swap(dx,dy);
@@ -113,28 +93,21 @@ void DrawLine(int x0, int y0, int x1, int y1, std::vector<int> color0, std::vect
 		}
 
 		if(x0 > x1) {
-			int aux = x0;
-			x0 = x1;
-			x1 = aux;
-
-		}
-		if(y0 > y1) {
-			int aux = y0;
-			y0 = y1;
-			y1 = aux;
+			std::swap(x0, x1);
+			std::swap(y0, y1);
+			u = 1;
 		}
 
 		int x = x0;
 		int y = y0;
-		
 
 		int d = 2 * dy - dx;
 		int incr_e = 2 * dy;
 		int incr_ne = 2 * (dy - dx);
 
 
-		color = interpolate(color0, color1, line_size, LineSize(x0, y0, x, y));
-		PutPixel(x, y, color);
+		color = u ? interpolate(color1, color0, line_size, LineSize(x0, y0, x, y)) : interpolate(color0, color1, line_size, LineSize(x0, y0, x, y));
+		k ? PutPixel(y, x, color) : PutPixel(x, y, color);
 
 		while (x < x1) {
 			if (d <= 0) {
@@ -145,7 +118,7 @@ void DrawLine(int x0, int y0, int x1, int y1, std::vector<int> color0, std::vect
 				x++;
 				y++;
 			}
-			color = interpolate(color0, color1, line_size, LineSize(x0, y0, x, y));
+			color = u ? interpolate(color1, color0, line_size, LineSize(x0, y0, x, y)) : interpolate(color0, color1, line_size, LineSize(x0, y0, x, y));
 			k ? PutPixel(y, x, color) : PutPixel(x, y, color);	
 		}
 	}
