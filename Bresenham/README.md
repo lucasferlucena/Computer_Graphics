@@ -6,7 +6,7 @@ Karina Alves Torreão Villarim 2016024660
 ---
 
 ### Introdução
-A primeira atividade da disciplina de computação tinha como objetivo a implementação do algorimo de Bresenham, este por sua vez traz uma forma de solucionar o problema de desenhar uma reta em uma tela. Além disso, pede-se que ocorra a interpolação linear das cores durante a formação da reta.
+A primeira atividade da disciplina de computação tinha como objetivo a implementação do algorimo de Bresenham, este por sua vez traz uma forma de solucionar o problema de desenhar uma reta em uma tela. A tarefa propõe a ciação de uma função para pintar um pixel na tela, o desenho de uma reta e o desenho de um triangulo. Além disso, pede-se que ocorra a interpolação linear das cores durante a formação de retas.
 
 ---
 
@@ -27,3 +27,39 @@ Entretanto, mesmo após esses tratamentos, os 3º, 4º, 7º e 8º octantes ainda
 ### Resultados
 Após a compreensão tanto do problema quanto do código ficou mais tranquila a resolução da tarefa. 
 
+<p align="center">
+	<br>
+	<img src="./prints/putpixel.png"/ width=363px height=334px>
+	<h5 align="center">Figura 1 - Octantes</h5>
+	<br>
+</p>
+<p align="center">
+	<br>
+	<img src="./prints/pontos.png"/ width=363px height=334px>
+	<h5 align="center">Figura 1 - Octantes</h5>
+	<br>
+</p>
+<p align="center">
+	<br>
+	<img src="./prints/interpolar.png"/ width=363px height=334px>
+	<h5 align="center">Figura 1 - Octantes</h5>
+	<br>
+</p>
+<p align="center">
+	<br>
+	<img src="./prints/retas.png"/ width=363px height=334px>
+	<h5 align="center">Figura 1 - Octantes</h5>
+	<br>
+</p>
+<p align="center">
+	<br>
+	<img src="./prints/drawtriangle.png"/ width=363px height=334px>
+	<h5 align="center">Figura 1 - Octantes</h5>
+	<br>
+</p>
+<p align="center">
+	<br>
+	<img src="./prints/triangulo.png"/ width=363px height=334px>
+	<h5 align="center">Figura 1 - Octantes</h5>
+	<br>
+</p>
