@@ -31,9 +31,9 @@ void MyGlDraw(void)
 			x = 0;
 			y++;
 		}
-	}*/
+	}
 
-	int x0 = 0;
+	/*int x0 = 0;
 	while(x0 <= 512){	
 
 		DrawLine(0 + x0, 0, 512 - x0, 512, red, blue);
@@ -42,9 +42,9 @@ void MyGlDraw(void)
 		//DrawLine(512, 512 - x0, 0, 0 + x0, green, blue);
 
 		x0 += 32;
-	}
+	}*/
 
-	//DrawTriangle(256, 100, 400, 300, 112, 300, red, blue, green);
+	DrawTriangle(256, 100, 400, 300, 112, 300, red, blue, green);
 }
 
 //-----------------------------------------------------------------------------
