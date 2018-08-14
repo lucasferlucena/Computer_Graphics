@@ -10,7 +10,7 @@ A primeira atividade da disciplina de computação tinha como objetivo a impleme
 
 ---
 
-### Estratégias
+### Desenvolvimento
 Antes de qualquer coisa, o essencial para o desenhdo de qualquer coisa é o posicionamento de um pixel na tela e que ele seja colorido com uma cor previamente determinada. Com os slides apresentados em sala foi possível implementar tal função.
 
 <p align="center">
@@ -47,6 +47,7 @@ A última etapa da tarefa era o desenho de o um triângulo que é só chamar a f
 	<h5 align="center">Figura 4 - DrawTriangle()</h5>
 	<br>
 </p>
+
 ---
 
 ### Resultados
