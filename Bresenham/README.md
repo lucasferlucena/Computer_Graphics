@@ -6,7 +6,7 @@ Karina Alves Torreão Villarim 2016024660
 ---
 
 ### Introdução
-A primeira atividade da disciplina de computação tinha como objetivo a implementação do algorimo de Bresenham, este por sua vez traz uma forma de solucionar o problema de desenhar uma reta em uma tela. A tarefa propõe a ciação de uma função para pintar um pixel na tela, o desenho de uma reta e o desenho de um triangulo. Além disso, pede-se que ocorra a interpolação linear das cores durante a formação de retas.
+A primeira atividade da disciplina de computação gráfica tinha como principal objetivo a implementação do algorimo de Bresenham, este por sua vez traz uma forma de solucionar o problema de desenhar uma reta em uma tela pixelada. A tarefa ainda propõe a criação de uma função para pintar um pixel na tela, o desenho de uma reta e o desenho de um triangulo. Além disso, pede-se que ocorra a interpolação linear das cores durante a formação de retas.
 
 ---
 
@@ -73,3 +73,10 @@ Após a compreensão tanto do problema quanto do código ficou mais tranquila a 
 	<h5 align="center">Figura 7 - Triangulo</h5>
 	<br>
 </p>
+
+---
+
+### Referências
+
+https://rosettacode.org/wiki/Bitmap/Bresenham%27s_line_algorithm
+https://en.wikipedia.org/wiki/Rasterisation
