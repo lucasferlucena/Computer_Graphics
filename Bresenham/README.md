@@ -15,7 +15,7 @@ O código apresentado em sala aula apenas solucionava o problema quando a linha 
 
 <p align="center">
 	<br>
-	<img src="./prints/octantes.png"/ width=736px height=667px>
+	<img src="./prints/octantes.png"/ width=363px height=334px>
 	<h5 align="center">Figura 1 - Octantes</h5>
 	<br>
 </p>
