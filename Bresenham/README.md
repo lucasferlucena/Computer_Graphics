@@ -29,7 +29,7 @@ Após a compreensão tanto do problema quanto do código ficou mais tranquila a 
 
 <p align="center">
 	<br>
-	<img src="./prints/putpixel.png"/ width=363px height=334px>
+	<img src="./prints/putpixel.png"/ width=544px height=93px>
 	<h5 align="center">Figura 2 - PutPixel()</h5>
 	<br>
 </p>
@@ -41,7 +41,7 @@ Após a compreensão tanto do problema quanto do código ficou mais tranquila a 
 </p>
 <p align="center">
 	<br>
-	<img src="./prints/interpolar.png"/ width=363px height=334px>
+	<img src="./prints/interpolar.png"/ width=924px height=266px>
 	<h5 align="center">Figura 4 - Interpolate()</h5>
 	<br>
 </p>
