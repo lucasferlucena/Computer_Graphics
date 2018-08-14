@@ -11,7 +11,7 @@ A primeira atividade da disciplina de computação tinha como objetivo a impleme
 ---
 
 ### Estratégias
-Antes de qualquer coisa, o essencial para o desenhdo de qualquer coisa é o posicionamento de um pixel na tela em uma determinada cor previamente setada. Com os slides apresentados em sala foi possível implementar tal função.
+Antes de qualquer coisa, o essencial para o desenhdo de qualquer coisa é o posicionamento de um pixel na tela e que ele seja colorido com uma cor previamente determinada. Com os slides apresentados em sala foi possível implementar tal função.
 
 <p align="center">
 	<br>
@@ -20,7 +20,7 @@ Antes de qualquer coisa, o essencial para o desenhdo de qualquer coisa é o posi
 	<br>
 </p>
 
-O código apresentado em sala aula apenas solucionava o problema quando a linha era desenhada de cima para baixo e quando o Δx era maior que o Δy. Com essa informação, transformamos todas as entradas possíveis para o caso que apresentava uma solução. Sendo assim, é necessário inverter os valores de x0 e x1 bem como y0 e y1 quando o trajeto da reta é de baixo para cima, também sendo necessário inverter as coordenadas x, y, como também os seus respectivos deltas quando o y crescer mais que o x no desenho da reta, isto é, quando o Δy for miaor que o Δx.
+Já em relação ao desenho de retas através da implementação do algoritmo de Bresenham, o código apresentado em sala aula apenas solucionava o problema quando a linha era desenhada de cima para baixo e quando o Δx era maior que o Δy, nos 1º, 2º, 5º e 6º octantes. Com essa informação, transformamos todas as entradas possíveis para o caso que apresenta uma solução com o código dado. Sendo assim, é necessário inverter os valores de x0 e x1 bem como y0 e y1 quando o trajeto da reta é de baixo para cima, também sendo necessário inverter as coordenadas x, y, como também os seus respectivos deltas quando o y crescer mais que o x no desenho da reta, isto é, quando o Δy for miaor que o Δx.
 
 <p align="center">
 	<br>
@@ -31,6 +31,22 @@ O código apresentado em sala aula apenas solucionava o problema quando a linha 
 
 Entretanto, mesmo após esses tratamentos, os 3º, 4º, 7º e 8º octantes ainda permaneciam sem solução, pois  um caso especial em que quando a coordenada x aumenta a y diminui e vice e versa. Então foi criado mais um if de tratamento em que quando o Δx multiplicado pelo Δy fosse negativo significa que a reta estava em um desses octantes. 
 
+A interpolação linear das cores foi solucionada com uma simples lógica matemática em que a posição atual da reta é dividida pelo tamanho total gerando assim números de 0 a 1 chamado no código de "t"  e esse número é multiplicado pela cor final e (1-t) é multiplicado pela cor inicial. Dessa forma, ocorre a transição da cor inicial para a final. 
+
+<p align="center">
+	<br>
+	<img src="./prints/interpolar.png"/ width=924px height=266px>
+	<h5 align="center">Figura 3 - Interpolate()</h5>
+	<br>
+</p>
+
+A última etapa da tarefa era o desenho de o um triângulo que é só chamar a função de desenhar linha três vezes.
+<p align="center">
+	<br>
+	<img src="./prints/drawtriangle.png"/ width=1018px height=89px>
+	<h5 align="center">Figura 4 - DrawTriangle()</h5>
+	<br>
+</p>
 ---
 
 ### Resultados
@@ -39,27 +55,17 @@ Após a compreensão tanto do problema quanto do código ficou mais tranquila a 
 <p align="center">
 	<br>
 	<img src="./prints/pontos.png"/ width=412px height=449px>
-	<h5 align="center">Figura 3 - Pontos</h5>
+	<h5 align="center">Figura 5 - Pontos</h5>
 	<br>
 </p>
-<p align="center">
-	<br>
-	<img src="./prints/interpolar.png"/ width=924px height=266px>
-	<h5 align="center">Figura 4 - Interpolate()</h5>
-	<br>
-</p>
+
 <p align="center">
 	<br>
 	<img src="./prints/retas.png"/ width=412px height=449px>
-	<h5 align="center">Figura 5 - Retas</h5>
+	<h5 align="center">Figura 6 - Retas</h5>
 	<br>
 </p>
-<p align="center">
-	<br>
-	<img src="./prints/drawtriangle.png"/ width=1018px height=89px>
-	<h5 align="center">Figura 6 - DrawTriangle()</h5>
-	<br>
-</p>
+
 <p align="center">
 	<br>
 	<img src="./prints/triangulo.png"/ width=412px height=449px>
