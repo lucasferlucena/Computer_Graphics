@@ -30,36 +30,36 @@ Após a compreensão tanto do problema quanto do código ficou mais tranquila a 
 <p align="center">
 	<br>
 	<img src="./prints/putpixel.png"/ width=363px height=334px>
-	<h5 align="center">Figura 1 - Octantes</h5>
+	<h5 align="center">Figura 2 - PutPixel()</h5>
 	<br>
 </p>
 <p align="center">
 	<br>
-	<img src="./prints/pontos.png"/ width=363px height=334px>
-	<h5 align="center">Figura 1 - Octantes</h5>
+	<img src="./prints/pontos.png"/ width=412px height=449px>
+	<h5 align="center">Figura 3 - Pontos</h5>
 	<br>
 </p>
 <p align="center">
 	<br>
 	<img src="./prints/interpolar.png"/ width=363px height=334px>
-	<h5 align="center">Figura 1 - Octantes</h5>
+	<h5 align="center">Figura 4 - Interpolate()</h5>
 	<br>
 </p>
 <p align="center">
 	<br>
-	<img src="./prints/retas.png"/ width=363px height=334px>
-	<h5 align="center">Figura 1 - Octantes</h5>
+	<img src="./prints/retas.png"/ width=412px height=449px>
+	<h5 align="center">Figura 5 - Retas</h5>
 	<br>
 </p>
 <p align="center">
 	<br>
-	<img src="./prints/drawtriangle.png"/ width=363px height=334px>
-	<h5 align="center">Figura 1 - Octantes</h5>
+	<img src="./prints/drawtriangle.png"/ width=1018px height=89px>
+	<h5 align="center">Figura 6 - DrawTriangle()</h5>
 	<br>
 </p>
 <p align="center">
 	<br>
-	<img src="./prints/triangulo.png"/ width=363px height=334px>
-	<h5 align="center">Figura 1 - Octantes</h5>
+	<img src="./prints/triangulo.png"/ width=412px height=449px>
+	<h5 align="center">Figura 7 - Triangulo</h5>
 	<br>
 </p>
