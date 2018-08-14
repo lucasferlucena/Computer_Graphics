@@ -87,4 +87,5 @@ Após a compreensão tanto do problema quanto do código ficou mais tranquila a 
 ### Referências
 
 https://rosettacode.org/wiki/Bitmap/Bresenham%27s_line_algorithm
+
 https://en.wikipedia.org/wiki/Rasterisation
