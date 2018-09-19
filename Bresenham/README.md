@@ -1,12 +1,7 @@
-# Atividade 1
+# Menu
 
-## Menu
-
-* [Grupo](#grupo)
-* [Introdução](#introdução)
-* [Desenvolvimento](#desenvolvimento)
-* [Resultados](#resultados)
-* [Referências](#referências)
+* [Atividade 1](#bresenham)
+* [Atividade 2](#desenvolvimento)
 
 ### Grupo
 Lucas Fernandes Lucena 2016023725
@@ -14,7 +9,7 @@ Lucas Fernandes Lucena 2016023725
 Karina Alves Torreão Villarim 2016024660
 
 ---
-
+## Bresenham
 ### Introdução
 A primeira atividade da disciplina de computação gráfica tinha como principal objetivo a implementação do algorimo de Bresenham, este por sua vez traz uma forma de solucionar o problema de desenhar uma reta em uma tela pixelada. A tarefa ainda propõe a criação de uma função para pintar um pixel na tela, o desenho de uma reta e o desenho de um triangulo. Além disso, pede-se que ocorra a interpolação linear das cores durante a formação de retas.
 
