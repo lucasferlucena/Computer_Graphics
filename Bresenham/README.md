@@ -90,17 +90,19 @@ Após a compreensão tanto do problema quanto do código ficou mais tranquila a 
 https://rosettacode.org/wiki/Bitmap/Bresenham%27s_line_algorithm
 
 https://en.wikipedia.org/wiki/Rasterisation
-<br>
-<br>
+
 ---
 
 ## Pipeline Gráfico
 
 O Pipeline Gráfico é caracterizado por um conjunto de passos que transformam os vértices de um objeto, através de cálculos algébricos, de modo que ele possa ser representado no espaço de tela com uma representação próxima à realidade, ou seja, uma cena em 3D é transformada em 2D. 
 
- 
-
-Figura 1: Estrutura do Pipeline Gráfico 
+<p align="center">
+	<br>
+	<img src="./prints/atv21.png"/ width=500px height=150px>
+	<h5 align="center">Figura 1: Estrutura do Pipeline Gráfico </h5>
+	<br>
+</p>
 
 ---
 
@@ -108,23 +110,17 @@ Figura 1: Estrutura do Pipeline Gráfico
 
 Inicialmente, cada objeto é representado de forma independente, cada um com seu designado eixo. Para juntarmos todos os objetos em uma cena conjunta, é necessário transformá-los para o Espaço do Universo, em que todas as peças serão padronizadas e inseridas em um único eixo. 
 
- 
+<p align="center">
+	<br>
+	<img src="./prints/atv22.png"/ width=467px height=223px>
+	<h5 align="center">Figura 2: Representação da transformação do Espaço do Objeto para o Universo </h5>
+	<br>
+</p>
 
-Figura 2: Representação da transformação do Espaço do Objeto para o Universo 
 
 #### Matriz Model 
 
 A Matriz Model (modelagem) compõe todas as transformações geométricas desejadas para um determinado objeto. Ela pode ser composta de rotações, translações, escalas, shears. Se não é necessário nenhum tipo de transformação, a Matriz Model é a identidade, não alterando nenhuma coordenada do objeto em questão. Neste caso, a Matriz Model foi a própria identidade. 
-
- 
-
- 
-
- 
-
- 
-
- 
 
 --- 
 
@@ -132,31 +128,37 @@ A Matriz Model (modelagem) compõe todas as transformações geométricas deseja
 
 O Espaço da Câmera é caracterizado por eixos de coordenadas, em que a câmera está posicionada na origem e olhando para o sentido negativo do eixo z. A transformação do Espaço do Universo para o da Câmera representa uma mudança de sistemas de coordenadas que irá levar os vértices do objeto para o sistema de coordenadas definido pela base da câmera, este processo é denominado “mudança de base”. 
 
- 
 
-Figura 3: Representação da transformação do Espaço do Universo para o da Câmera 
-
- 
+<p align="center">
+	<br>
+	<img src="./prints/atv23.png"/ width=467px height=382px>
+	<h5 align="center">Figura 3: Representação da transformação do Espaço do Universo para o da Câmera</h5>
+	<br>
+</p> 
 
 #### Matriz View 
 
 Esse processo de mudança de base é montado na Matriz View. Com os objetos no Espaço do Universo, precisamos definir a posição da câmera no espaço através dos vetores: Posição da Câmera, Direção da Câmera (Look At - Posição da Câmera), Up. 
 
- 
+<p align="center">
+	<br>
+	<img src="./prints/atv24.png"/ width=365px height=336px>
+	<h5 align="center">Figura 4: Cálculo dos eixos do sistema de coordenadas da câmera </h5>
+	<br>
+</p> 
 
-Figura 4: Cálculo dos eixos do sistema de coordenadas da câmera 
+<p align="center">
+	<br>
+	<img src="./prints/at25.png"/ width=459px height=283px>
+	<h5 align="center">Figura 5: Matriz View</h5>
+	<br>
+</p> 
 
- 
-
- 
-
-                          
-
-Figura 5: Matriz View 
-
- 
-
-Figura 6: Código da construção da Matriz View 
+<p align="center">
+	<br>
+	<h5 align="center">Figura 6: Código da construção da Matriz View </h5>
+	<br>
+</p> 
 
 --- 
 
@@ -164,29 +166,33 @@ Figura 6: Código da construção da Matriz View
 
 Multiplicando os vértices pela Matriz de Projeção, teremos o objeto agora no Espaço de Recorte. Dependendo da matriz em questão, podemos obter dois tipos de projeção, perspectiva, que permite uma sensação de profundidade, e ortogonal, que preserva o paralelismo das retas. Nesse caso, utilizaremos uma matriz mais simples, que oferece uma projeção ortogonal do objeto. Após a multiplicação, a coordenada “w” será provavelmente diferente de 1. 
 
+<p align="center">
+	<br>
+	<img src="./prints/atv25.png"/ width=505px height=210px>
+	<h5 align="center">Figura 7: Tipos de perspectivas </h5>
+	<br>
+</p> 
+
+<p align="center">
+	<br>
+	<img src="./prints/atv26.png"/ width=300px height=176px>
+	<h5 align="center">Figura 8: Matriz de Projeção Simples</h5>
+	<br>
+</p> 
+
+<p align="center">
+	<br>
+	<h5 align="center">Figura 9: Código da Matriz de Projeção</h5>
+	<br>
+</p> 
  
-
-Figura 7: Tipos de perspectivas 
-
- 
-
- 
-
-Figura 8: Matriz de Projeção Simples 
-
- 
-
-... 
-
-Figura 9: Código da Matriz de Projeção 
-
- 
-
 A transformação para o Espaço Canônico não necessita de uma matriz como nas transformações anteriores. A sua conversão é realizada através da homogeneização da coordenada “w” (coordenada homogênea), ou seja, é feita uma divisão de todas as coordenadas do vetor por “w”, para que esta volte a ser 1, gerando um cubo quem contém os objetos que serão visualizados no Espaço de Tela. 
 
-Não sei se precisa do código se quiser colocar bota aí 
-
-Figura 10 (?) 
+<p align="center">
+	<br>
+	<h5 align="center">Figura 10: Código Homgenizaço</h5>
+	<br>
+</p> 
 
 ---
 
@@ -194,29 +200,30 @@ Figura 10 (?)
 
 No Espaço Canônico é garantido que todos os vértices da cena visível, dentro do cubo gerado, possuem os valores de suas coordenadas entre -1 e 1. 
 
- 
-
- 
-
-Figura 11: Representação da transformação do Espaço Canônico para o da Tela 
-
- 
+<p align="center">
+	<br>
+	<img src="./prints/atv27.png"/ width=500px height=137px>
+	<h5 align="center">Figura 11: Representação da transfomação do Espaço Canônico para o da Tela</h5>
+	<br>
+</p> 
 
 #### Matriz ViewPort 
 
 Para levarmos os vértices para o Espaço de Tela é necessário fazermos algumas modificações. Como visto na imagem acima, o eixo “y” da tela cresce para baixo, o inverso de um sistema de coordenadas comum, então precisamos de uma matriz que inverta o sentido deste eixo. Numa tela comum os pixels são numerados de 0 a 511, então devemos escalar os valores de “x” e “y”, que variam de –1 até 1, para 0 até 511, multiplicando por outra matriz. Por último, como o cubo do Espaço Canônico está centrado na origem do seu sistema de coordenada, devemos transladá-lo para o centro da tela utilizando uma matriz de translação. 
 
- 
 
- 
+<p align="center">
+	<br>
+	<img src="./prints/atv27.png"/ width=456px height=146px>
+	<h5 align="center">Figura 12: Matriz ViewPort</h5>
+	<br>
+</p>
 
-Figura 11: Matriz ViewPort 
-
- 
-
-... 
-
-Figura 12: Código 
+<p align="center">
+	<br>
+	<h5 align="center">Figura 12: Código</h5>
+	<br>
+</p> 
 
  
 
