@@ -1,7 +1,7 @@
 # Menu
 
 * [Atividade 1](#bresenham)
-* [Atividade 2](#pipeline)
+* [Atividade 2](#pipeline-gráfico)
 
 ### Grupo
 Lucas Fernandes Lucena 2016023725
@@ -90,7 +90,8 @@ Após a compreensão tanto do problema quanto do código ficou mais tranquila a 
 https://rosettacode.org/wiki/Bitmap/Bresenham%27s_line_algorithm
 
 https://en.wikipedia.org/wiki/Rasterisation
-
+<br>
+<br>
 ---
 
 ## Pipeline Gráfico
@@ -187,7 +188,7 @@ Não sei se precisa do código se quiser colocar bota aí
 
 Figura 10 (?) 
 
- 
+---
 
 ### Espaço Canônico/Espaço de Tela 
 
