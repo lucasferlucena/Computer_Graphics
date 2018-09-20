@@ -222,4 +222,19 @@ Para levarmos os vértices para o Espaço de Tela é necessário fazermos alguma
 	<br>
 </p> 
 
+---
+
+### Resultados
+
+Com a construção de todas as matrizes pertinentes ao pipeline gráfico, foi possível gerar alterar as coordenadas dos vértices com o objetivo de criar a sensaço de distorção na imagem dependendo da posição da câmera. Um dos testes feitos foi com a formação de um cubo. Com o posicionamento de uma câmera, as retas mais próximas da tela ficam maiores enquanto que as mais distantes ficam menores.
+
+<p align="center">
+	<br>
+	<img src="./prints/cubo.png"/ width=510px height=550px>
+	<h5 align="center">Figura 12: Cubo formado pela rasteização de pontos após passar pelo pipeline</h5>
+	<br>
+</p> 
+
+---
+
 ### Dificuldades e Conclusão
