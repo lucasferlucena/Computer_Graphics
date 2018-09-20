@@ -1,7 +1,7 @@
 # Menu
 
-* [Atividade 1](#bresenham)
-* [Atividade 2](#pipeline-gráfico)
+* [Bresenham](#bresenham)
+* [Pipeline Gráfico](#pipeline-gráfico)
 
 ### Grupo
 Lucas Fernandes Lucena 2016023725
@@ -237,4 +237,10 @@ Com a construção de todas as matrizes pertinentes ao pipeline gráfico, foi po
 
 ---
 
-### Dificuldades e Conclusão
+### Refências
+
+https://glm.g-truc.net/0.9.9/index.html
+
+http://www.assimp.org/
+
+
