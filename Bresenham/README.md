@@ -156,6 +156,7 @@ Esse processo de mudança de base é montado na Matriz View. Com os objetos no E
 
 <p align="center">
 	<br>
+	<img src="./prints/at29.png"/ width=729px height=613px>
 	<h5 align="center">Figura 6: Código da construção da Matriz View </h5>
 	<br>
 </p> 
@@ -178,19 +179,14 @@ Multiplicando os vértices pela Matriz de Projeção, teremos o objeto agora no 
 	<img src="./prints/atv26.png"/ width=300px height=176px>
 	<h5 align="center">Figura 8: Matriz de Projeção Simples</h5>
 	<br>
-</p> 
-
-<p align="center">
-	<br>
-	<h5 align="center">Figura 9: Código da Matriz de Projeção</h5>
-	<br>
-</p> 
+</p>
  
 A transformação para o Espaço Canônico não necessita de uma matriz como nas transformações anteriores. A sua conversão é realizada através da homogeneização da coordenada “w” (coordenada homogênea), ou seja, é feita uma divisão de todas as coordenadas do vetor por “w”, para que esta volte a ser 1, gerando um cubo quem contém os objetos que serão visualizados no Espaço de Tela. 
 
 <p align="center">
 	<br>
-	<h5 align="center">Figura 10: Código Homgenizaço</h5>
+	<img src="./prints/atv210.png"/ width=380px height=132px>
+	<h5 align="center">Figura 9: Código de Homgenização</h5>
 	<br>
 </p> 
 
@@ -203,7 +199,7 @@ No Espaço Canônico é garantido que todos os vértices da cena visível, dentr
 <p align="center">
 	<br>
 	<img src="./prints/atv27.png"/ width=500px height=137px>
-	<h5 align="center">Figura 11: Representação da transfomação do Espaço Canônico para o da Tela</h5>
+	<h5 align="center">Figura 10: Representação da transfomação do Espaço Canônico para o da Tela</h5>
 	<br>
 </p> 
 
@@ -215,16 +211,15 @@ Para levarmos os vértices para o Espaço de Tela é necessário fazermos alguma
 <p align="center">
 	<br>
 	<img src="./prints/atv27.png"/ width=456px height=146px>
-	<h5 align="center">Figura 12: Matriz ViewPort</h5>
+	<h5 align="center">Figura 11: Matriz ViewPort</h5>
 	<br>
 </p>
 
 <p align="center">
 	<br>
-	<h5 align="center">Figura 12: Código</h5>
+	<img src="./prints/atv211.png"/ width=416px height=510px>
+	<h5 align="center">Figura 12: Código da Matriz ViewPort</h5>
 	<br>
 </p> 
-
- 
 
 ### Dificuldades e Conclusão
