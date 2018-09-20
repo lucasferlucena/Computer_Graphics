@@ -1,7 +1,7 @@
 # Menu
 
 * [Atividade 1](#bresenham)
-* [Atividade 2](#pipeline gráfico)
+* [Atividade 2](#pipeline)
 
 ### Grupo
 Lucas Fernandes Lucena 2016023725
